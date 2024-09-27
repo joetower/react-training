@@ -8,11 +8,17 @@ function Header({ heading, bgColor, textColor }) {
     padding: '1rem 2rem',
   };
 
+  const linkStyles = {
+    color: textColor,
+  };
+
   return (
     <header style={headerStyles}>
       <div className='container'>
         <h1>
-          <Link to='/'>{heading}</Link>
+          <Link to='/' style={linkStyles}>
+            {heading}
+          </Link>
         </h1>
       </div>
     </header>
